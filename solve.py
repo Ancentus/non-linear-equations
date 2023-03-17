@@ -49,8 +49,8 @@ start_time = time.time()
 root = newton_raphson(x0)
 elapsed_time = time.time() - start_time
 if root is not None:
-    print("The root found by Newton-Raphson is:", root)
-    print("Time taken by Newton-Raphson:", elapsed_time, "seconds")
+    print(f"The root found by Newton-Raphson is: {root:.6f}")
+    print(f"Time taken by Newton-Raphson: {elapsed_time:.6f} seconds")
 else:
     print("Newton-Raphson failed to converge.")
 
@@ -60,7 +60,7 @@ start_time = time.time()
 root = bisection(a, b)
 elapsed_time = time.time() - start_time
 if root is not None:
-    print("The root found by bisection is:", root)
-    print("Time taken by bisection:", elapsed_time, "seconds")
+    print(f"The root found by bisection is: {root:.6f}")
+    print(f"Time taken by bisection: {elapsed_time:.6f} seconds")
 else:
     print("Bisection failed to converge.")
