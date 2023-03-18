@@ -1,6 +1,12 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,      
+    urlcolor=cyan
+    }
 
 \title{Solving Nonlinear Equations using Newton-Raphson and Bisection Methods}
 \author{Ancentus Makau \\ Jomo Kenyatta University of Agriculture and Technology \\ Registration Number: SCT211-0469/2021}
@@ -10,9 +16,11 @@
 
 \maketitle
 
+GITHUB LINK: \url{https://github.com/Ancentus/non-linear-equations}
+
 \section{Introduction}
 
-In this report, we will solve the following nonlinear equation:
+We will solve the following nonlinear equation:
 
 \begin{equation}
     f(x) = x^5 + x^3 - 2x - 5 = 0
@@ -83,7 +91,6 @@ The bisection method is another iterative method for finding the root of a funct
 
 where $a_n$ and $b_n$ are the endpoints of the subinterval at iteration $n$. To use the bisection method to solve Equation (1), we need to find two initial points $a_0$ and $b_0$ such that $f(a_0)$ and $f(b_0)$ have opposite signs.
 
-We can start with $a_0 = 1.0$ and $b_0 = 2.0$.
 
 The Python program to implement the bisection method is shown below:
 
@@ -136,5 +143,5 @@ Time taken by bisection: 0.000022 seconds
 
 \section{Conclusion}
 
-In this report, we have solved the nonlinear equation $f(x) = x^5 + x^3 - 2x - 5 = 0$ using the Newton-Raphson method and the Bisection method. Both methods give the same answer. The bisection method is slightly faster than the Newton-Raphson method for this equation.
+We have solved the nonlinear equation $f(x) = x^5 + x^3 - 2x - 5 = 0$ using the Newton-Raphson method and the Bisection method. Both methods give the same answer. The bisection method is slightly faster than the Newton-Raphson method for this equation.
 \end{document}
